@@ -1,0 +1,226 @@
+{
+  "intents": [
+    {
+      "tag": "greeting",
+      "patterns": ["Hi", "Hello", "Hey", "Good morning", "Good evening", "Greetings", "What's up", "Howdy"],
+      "responses": ["Hello! I'm your healthcare assistant. I can help you with information about allopathic medicines and Ayurvedic remedies. What would you like to know?", "Hi there! Ask me anything about medicines or Ayurvedic treatments.", "Hello! I'm here to assist you with health-related queries. How can I help?"]
+    },
+    {
+      "tag": "how_are_you",
+      "patterns": ["How are you?", "How are you doing?", "How's it going?", "What's up with you?", "How do you feel?", "Are you ok?"],
+      "responses": ["I'm functioning well, thank you! How can I assist you with your health queries today?", "I'm here and ready to help! What health information are you looking for?", "I'm doing great! Let me know if you have questions about medicines or Ayurvedic remedies."]
+    },
+    {
+      "tag": "bot_identity",
+      "patterns": ["Who are you?", "What are you?", "Tell me about yourself", "What can you do?", "What is your purpose?", "Are you a bot?"],
+      "responses": ["I'm a healthcare chatbot specializing in allopathic medicines and Ayurvedic remedies. I provide information about uses, dosages, and benefits.", "I'm your AI health assistant focused on medicines and Ayurveda. I can answer questions about medications, herbs, and wellness tips.", "I'm a specialized chatbot that provides information on conventional medicines and Ayurvedic treatments. Ask me anything in these areas!"]
+    },
+    {
+      "tag": "bot_capabilities",
+      "patterns": ["What can you help me with?", "What do you know?", "What topics can you discuss?", "What are your capabilities?", "What can I ask you?"],
+      "responses": ["I can help with information about allopathic medicines (uses, dosages, side effects), Ayurvedic herbs and remedies, home remedies, and general wellness tips.", "I specialize in conventional medications, Ayurvedic treatments, natural remedies, and health management advice. Feel free to ask!", "Ask me about specific medicines, Ayurvedic herbs, dosage guidelines, health conditions, home remedies, or wellness practices!"]
+    },
+    {
+      "tag": "help",
+      "patterns": ["Help", "Help me", "I need help", "Can you help?", "Assist me", "Support", "Guide me"],
+      "responses": ["I'm here to help! You can ask me about medicines, Ayurvedic remedies, dosages, side effects, home treatments, or general health tips.", "Sure! Ask me questions about medications, herbs, health conditions, or wellness advice. What do you need?", "I can assist with medicine information, Ayurvedic treatments, and health guidance. What would you like to know?"]
+    },
+    {
+      "tag": "thanks",
+      "patterns": ["Thanks", "Thank you", "That's helpful", "Thanks a lot", "Appreciate it", "Thanks so much", "Thank you very much"],
+      "responses": ["You're welcome! Stay healthy!", "Happy to help! Take care.", "Anytime! Feel free to ask more questions."]
+    },
+    {
+      "tag": "goodbye",
+      "patterns": ["Bye", "Goodbye", "See you later", "Take care", "Talk to you later", "Catch you later", "Farewell"],
+      "responses": ["Goodbye! Take care of your health.", "See you later! Stay healthy!", "Bye! Feel free to return if you have more health questions."]
+    },
+    {
+      "tag": "out_of_scope_general",
+      "patterns": ["Tell me a joke", "What's the weather?", "Play music", "Tell me a story", "What's the news?", "Who won the game?", "Recommend a movie", "Tell me about politics"],
+      "responses": ["I specialize in healthcare topics—medicines and Ayurveda. I can't help with that, but I'm happy to answer health-related questions!", "That's outside my area of expertise. I focus on medicines, Ayurvedic remedies, and wellness. How can I help with your health?", "I'm designed specifically for healthcare queries. Ask me about medications, Ayurvedic treatments, or health concerns!"]
+    },
+    {
+      "tag": "out_of_scope_tech",
+      "patterns": ["Fix my computer", "How to code?", "Teach me Python", "Wifi not working", "Phone problems", "Software issue", "App recommendation"],
+      "responses": ["I'm a healthcare assistant and can't help with technical issues. I specialize in medicines and Ayurvedic remedies. Any health questions?", "That's not my specialty—I focus on health and wellness. Is there anything health-related I can assist you with?"]
+    },
+    {
+      "tag": "out_of_scope_legal",
+      "patterns": ["Legal advice", "How to sue?", "Lawyer recommendation", "Contract help", "Legal rights", "Court case"],
+      "responses": ["I can't provide legal advice. I specialize in healthcare information—medicines and Ayurveda. Can I help with any health concerns?", "That requires legal expertise. I focus on health topics. Do you have any medical or wellness questions?"]
+    },
+    {
+      "tag": "out_of_scope_financial",
+      "patterns": ["Investment advice", "Stock market", "How to save money?", "Tax help", "Loan advice", "Financial planning"],
+      "responses": ["I'm not equipped to provide financial advice. I specialize in healthcare—medicines and Ayurvedic treatments. Any health queries?", "That's outside my area. I focus on health and wellness topics. Can I help with something health-related?"]
+    },
+    {
+      "tag": "self_harm_concern",
+      "patterns": ["I want to hurt myself", "I want to die", "Thinking of suicide", "I don't want to live", "End my life", "Kill myself", "Self harm"],
+      "responses": ["I'm really concerned about what you're going through. Please reach out to a mental health professional or crisis helpline immediately. Your life matters, and help is available.", "Please talk to someone who can help right away—a counselor, trusted person, or crisis helpline. You deserve support and care.", "I'm worried about you. Please contact a mental health crisis service or emergency services immediately. You're not alone, and people want to help."]
+    },
+    {
+      "tag": "violence_concern",
+      "patterns": ["I want to hurt someone", "How to harm someone?", "Make a weapon", "Violence against someone", "Attack someone"],
+      "responses": ["I cannot and will not provide information that could harm others. If you're having concerning thoughts, please speak with a mental health professional immediately.", "I'm unable to help with this. If you're experiencing difficult emotions, please reach out to a counselor or mental health service for support.", "I cannot assist with anything that could cause harm. Please contact a mental health professional if you're struggling with these thoughts."]
+    },
+    {
+      "tag": "abuse_concern",
+      "patterns": ["I'm being abused", "Someone is hurting me", "Domestic violence", "I'm being harmed", "Unsafe at home"],
+      "responses": ["I'm so sorry you're experiencing this. Please reach out to local authorities, a domestic violence hotline, or a trusted person immediately. Your safety is the priority.", "Please contact emergency services or a domestic violence support organization right away. You deserve to be safe, and help is available.", "This is very serious. Please call your local emergency number or a domestic violence helpline immediately for help and support."]
+    },
+    {
+      "tag": "emergency_medical",
+      "patterns": ["Medical emergency", "Someone collapsed", "Not breathing", "Heart attack", "Stroke", "Severe bleeding", "Choking", "Unconscious", "Can't breathe"],
+      "responses": ["This is a medical emergency! Call your local emergency number (911 in US, 112 in India/EU) immediately. Don't wait!", "Please call emergency services RIGHT NOW. This requires immediate professional medical attention!", "Call emergency services immediately! This is urgent and needs professional medical help right away."]
+    },
+    {
+      "tag": "emergency_poison",
+      "patterns": ["Poisoning", "Swallowed poison", "Overdose", "Toxic substance", "Ate something poisonous", "Chemical exposure"],
+      "responses": ["This is an emergency! Call your local poison control center or emergency services immediately. Don't induce vomiting unless instructed.", "Call emergency services or poison control right away! This requires immediate professional help.", "Urgent: Contact emergency services or poison control immediately. Keep the substance container if possible."]
+    },
+    {
+      "tag": "emergency_injury",
+      "patterns": ["Severe injury", "Deep cut", "Broken bone", "Head injury", "Heavy bleeding", "Serious burn", "Severe pain"],
+      "responses": ["This sounds serious. Please go to the emergency room or call emergency services immediately for proper medical care.", "Seek immediate medical attention at an emergency room or call emergency services. Don't delay!", "This requires urgent medical care. Go to the ER or call emergency services right away."]
+    },
+    {
+      "tag": "profanity_response",
+      "patterns": ["fuck", "shit", "damn", "bitch", "asshole", "bastard", "hell"],
+      "responses": ["I'm here to help with health questions. Let's keep our conversation respectful. What health information do you need?", "I understand you may be frustrated. I'm here to assist with healthcare queries. How can I help?", "Let's maintain a professional conversation. I'm happy to answer your health-related questions."]
+    },
+    {
+      "tag": "angry_user",
+      "patterns": ["You're useless", "You don't help", "This is stupid", "You suck", "I hate this", "Terrible bot"],
+      "responses": ["I'm sorry I haven't met your expectations. Let me try to help better. What specific health information do you need?", "I apologize if I haven't been helpful. Please tell me your health question, and I'll do my best to assist.", "I'm here to help with medicines and Ayurvedic remedies. Let me know what you're looking for, and I'll try my best."]
+    },
+    {
+      "tag": "prescription_request",
+      "patterns": ["Can you prescribe medicine?", "Give me a prescription", "What should I take?", "Prescribe something", "Write prescription"],
+      "responses": ["I cannot prescribe medications—only licensed healthcare providers can do that. I provide information only. Please consult a doctor for prescriptions.", "I'm an information assistant, not a licensed medical professional. For prescriptions, please visit a qualified doctor.", "Only qualified doctors can prescribe medications. I can provide general information, but please consult a healthcare provider for treatment."]
+    },
+    {
+      "tag": "diagnosis_request",
+      "patterns": ["What's wrong with me?", "Diagnose my condition", "What disease do I have?", "Do I have cancer?", "Am I sick?"],
+      "responses": ["I cannot diagnose medical conditions. Please consult a qualified healthcare provider for proper examination and diagnosis.", "Only a licensed doctor can diagnose conditions. I provide general information only. Please see a healthcare professional.", "I'm not able to diagnose. For accurate diagnosis, please visit a qualified medical practitioner who can examine you properly."]
+    },
+    {
+      "tag": "medical_advice_disclaimer",
+      "patterns": ["Is this medical advice?", "Can I trust this?", "Should I follow this?", "Is this accurate?"],
+      "responses": ["I provide general information only, not medical advice. Always consult a qualified healthcare provider for personalized medical guidance.", "This is educational information, not professional medical advice. Please verify with your doctor before making health decisions.", "I offer information for general knowledge. For medical advice specific to your situation, please consult a licensed healthcare professional."]
+    },
+    {
+      "tag": "drug_interaction_complex",
+      "patterns": ["Can I take multiple medicines?", "Drug interaction check", "Is this combination safe?", "Medicine compatibility"],
+      "responses": ["Drug interactions can be complex and serious. Please consult your doctor or pharmacist to review all your medications together.", "I can provide general information, but for your specific medication combination, please speak with your healthcare provider or pharmacist.", "This requires professional review. Always inform your doctor about all medications, supplements, and herbs you're taking."]
+    },
+    {
+      "tag": "alternative_to_doctor",
+      "patterns": ["Can you replace my doctor?", "Do I need to see a doctor?", "Can I skip doctor visit?", "Just tell me what to do"],
+      "responses": ["I cannot replace a doctor. I provide information only. Please consult healthcare professionals for diagnosis, treatment, and medical advice.", "Yes, you should see a doctor for proper evaluation. I'm here to provide information, not substitute for professional medical care.", "Always consult a qualified healthcare provider for medical decisions. I'm an information resource, not a replacement for professional care."]
+    },
+    {
+      "tag": "severe_symptoms",
+      "patterns": ["Severe chest pain", "Difficulty breathing", "Sudden weakness", "Severe headache", "Sudden confusion", "Loss of consciousness"],
+      "responses": ["These symptoms could be serious. Please seek immediate medical attention or call emergency services right away.", "This requires urgent medical evaluation. Go to the emergency room or call emergency services immediately.", "Don't delay—seek emergency medical care right now. These symptoms need immediate professional assessment."]
+    },
+    {
+      "tag": "pregnancy_safety",
+      "patterns": ["Pregnant and sick", "Medicine during pregnancy", "Safe for pregnancy?", "I'm pregnant, what can I take?"],
+      "responses": ["Pregnancy requires special care. Please consult your obstetrician or healthcare provider before taking any medication, supplement, or herbal remedy.", "Many substances affect pregnancy differently. Always check with your doctor before taking anything while pregnant or breastfeeding.", "Your doctor must guide medication use during pregnancy. Never take anything without consulting your healthcare provider first."]
+    },
+    {
+      "tag": "child_medication",
+      "patterns": ["Medicine for my baby", "What can I give my child?", "Infant medication", "Kid dosage"],
+      "responses": ["Children require specific dosing based on age and weight. Please consult a pediatrician before giving any medication to children.", "Never give children adult medications without pediatrician guidance. Dosing for children is very specific—please consult your child's doctor.", "Children's medication needs are different from adults. Always consult a pediatrician for proper guidance and dosing."]
+    },
+    {
+      "tag": "allergic_reaction",
+      "patterns": ["Allergic reaction", "Rash after medicine", "Swelling after taking", "Medicine allergy", "Adverse reaction"],
+      "responses": ["Stop taking the medication immediately and contact your doctor. If you have difficulty breathing or severe swelling, call emergency services.", "This could be an allergic reaction. Stop the medication and seek medical attention immediately, especially if symptoms are severe.", "Discontinue the medication and contact your healthcare provider right away. For severe reactions (breathing difficulty, swelling), call emergency services."]
+    },
+    {
+      "tag": "overdose_concern",
+      "patterns": ["Took too much medicine", "Overdosed", "Took extra pills", "Took too many", "Medicine overdose"],
+      "responses": ["This is serious. Call poison control or emergency services immediately. Have the medication container with you when you call.", "Contact emergency services or poison control right away. Don't wait—overdoses can be dangerous and require immediate medical attention.", "Call emergency services or poison control immediately. This requires urgent professional help. Keep the medication bottle with you."]
+    },
+    {
+      "tag": "stop_medication",
+      "patterns": ["Can I stop my medicine?", "Stop taking pills", "Quit medication", "Don't want to take medicine anymore"],
+      "responses": ["Never stop prescribed medications without consulting your doctor. Suddenly stopping some medications can be dangerous.", "Please discuss this with your doctor before stopping any prescribed medication. They can guide you safely.", "Don't stop medications on your own. Your doctor needs to evaluate and guide any changes to your treatment plan safely."]
+    },
+    {
+      "tag": "side_effects_severe",
+      "patterns": ["Severe side effects", "Medicine making me worse", "Bad reaction to medicine", "Serious side effects"],
+      "responses": ["Stop taking the medication and contact your doctor immediately. If symptoms are severe, go to the emergency room.", "This needs immediate medical attention. Contact your healthcare provider right away or seek emergency care if symptoms are serious.", "Stop the medication and call your doctor immediately. For severe symptoms, don't wait—go to the ER or call emergency services."]
+    },
+    {
+      "tag": "recreational_drugs",
+      "patterns": ["Tell me about marijuana", "Is cocaine safe?", "Recreational drugs", "Getting high", "Drug effects"],
+      "responses": ["I cannot provide information about recreational or illegal drugs. I focus on legitimate medicines and Ayurvedic remedies for health.", "That's outside my scope. I specialize in therapeutic medicines and Ayurvedic treatments for health conditions only.", "I don't provide information on recreational substances. I focus on legitimate healthcare treatments and remedies."]
+    },
+    {
+      "tag": "weight_loss_pills",
+      "patterns": ["Best weight loss pills", "Fast weight loss medicine", "Diet pills that work", "Quick weight loss drugs"],
+      "responses": ["Sustainable weight loss requires healthy diet and exercise. Many weight loss pills have risks. Please consult a doctor for safe weight management guidance.", "Be cautious with weight loss medications—many are unsafe or ineffective. Consult a healthcare provider for evidence-based weight management strategies.", "There are no safe shortcuts. Please work with a doctor or nutritionist for healthy, sustainable weight loss through proper diet and exercise."]
+    },
+    {
+      "tag": "cosmetic_drugs",
+      "patterns": ["Medicine for fair skin", "Skin whitening pills", "Beauty enhancement drugs", "Body enhancement medicine"],
+      "responses": ["I focus on health and wellness, not cosmetic enhancement. Please consult a dermatologist for safe skin care guidance.", "Many cosmetic medications have risks. For safe skin care, please consult a qualified dermatologist.", "I provide information on health treatments, not cosmetic enhancement. Please see a dermatologist for proper skin care advice."]
+    },
+    {
+      "tag": "performance_enhancement",
+      "patterns": ["Steroids for bodybuilding", "Performance enhancing drugs", "Muscle building drugs", "Athletic enhancement"],
+      "responses": ["I cannot provide information on performance-enhancing drugs. These substances have serious health risks. Please focus on safe training and nutrition.", "Performance-enhancing drugs are dangerous and often illegal. I recommend working with qualified trainers and nutritionists for safe athletic development.", "I don't provide information on such substances. Please pursue fitness goals through safe, evidence-based training and nutrition methods."]
+    },
+    {
+      "tag": "bot_limitations",
+      "patterns": ["What can't you do?", "Your limitations", "What don't you know?", "What are you bad at?"],
+      "responses": ["I cannot diagnose conditions, prescribe medications, or replace professional medical advice. I provide general information on medicines and Ayurveda only.", "I can't provide personalized medical advice, diagnose conditions, or prescribe treatments. Always consult healthcare professionals for medical decisions.", "My limitations: I'm not a licensed medical professional, can't diagnose or prescribe, and provide general information only. Always consult qualified doctors."]
+    },
+    {
+      "tag": "compliment",
+      "patterns": ["You're helpful", "Good bot", "You're great", "Thanks for the help", "You're amazing", "Excellent"],
+      "responses": ["Thank you! I'm glad I could help. Feel free to ask more health-related questions anytime.", "I appreciate that! Let me know if you have more questions about medicines or Ayurvedic remedies.", "Thank you for the kind words! I'm here whenever you need health information."]
+    },
+    {
+      "tag": "clarification",
+      "patterns": ["I don't understand", "Can you explain more?", "What do you mean?", "Clarify please", "Explain again", "More details"],
+      "responses": ["I'll be happy to explain further. What specific part would you like me to clarify?", "Sure! Which aspect would you like me to explain in more detail?", "Of course! Please tell me which part you'd like more information about."]
+    },
+    {
+      "tag": "repeat_request",
+      "patterns": ["Say that again", "Repeat please", "What did you say?", "Can you repeat?", "Tell me again"],
+      "responses": ["Of course! Let me provide that information again. [Previous response would be repeated]", "Sure, I'll repeat that for you. Which part would you like me to go over?"]
+    },
+    {
+      "tag": "bot_feelings",
+      "patterns": ["Do you have feelings?", "Are you conscious?", "Do you feel pain?", "Are you alive?", "Do you get tired?"],
+      "responses": ["I'm an AI assistant without feelings or consciousness. I'm here to provide healthcare information to help you.", "I don't have feelings, but I'm programmed to assist you with health information about medicines and Ayurvedic remedies.", "I'm a chatbot designed to provide health information. I don't experience emotions, but I'm always ready to help!"]
+    },
+    {
+      "tag": "bot_age",
+      "patterns": ["How old are you?", "When were you created?", "What's your age?", "When were you born?"],
+      "responses": ["I'm a healthcare AI assistant. My age isn't relevant—what matters is providing you with accurate health information! What would you like to know?", "I'm timeless in a way! But I'm here now to help with your health questions. What can I assist you with?"]
+    },
+    {
+      "tag": "privacy_concern",
+      "patterns": ["Is this private?", "Do you store my data?", "Is my information safe?", "Privacy policy", "Data security"],
+      "responses": ["I don't store personal health information. However, please avoid sharing sensitive personal details. For privacy specifics, check the platform's privacy policy.", "I recommend not sharing personal identifying information. For detailed privacy practices, please review the service's privacy policy.", "Avoid sharing personal identifiable details. For information about data handling, please refer to the platform's privacy documentation."]
+    },
+    {
+      "tag": "general_wellness",
+      "patterns": ["How to stay healthy?", "Wellness tips", "General health advice", "How to be healthy?"],
+      "responses": ["Maintain balanced nutrition, regular exercise, 7-8 hours sleep, stress management, adequate hydration, and regular health check-ups for optimal wellness.", "Stay healthy with nutritious diet, physical activity, good sleep, stress control, avoiding tobacco/excess alcohol, and preventive healthcare visits.", "Key wellness pillars: balanced diet, regular movement, quality sleep, stress management, social connections, and routine medical screenings."]
+    },
+    {
+  "tag": "weight_gain",
+  "patterns": ["Home remedy for weight gain", "Natural weight gain tips", "How to gain weight naturally?", "Weight gain remedies"],
+  "responses": [
+    "For healthy weight gain, eat balanced meals with good proteins (like lentils, eggs, dairy), include nuts, ghee, and dates, drink milk with Ashwagandha or Shatavari, and exercise to build muscle. Avoid junk foods—focus on nutritious, calorie-dense foods."
+  ]
+}
+  ]
+}

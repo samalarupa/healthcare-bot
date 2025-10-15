@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Premium Healthcare Assistant</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+  <div class="chat-container">
+    <div class="header">
+      <div class="header-content">
+        <h1>Healthcare Assistant</h1>
+        <p>AI-Powered Medical & Ayurvedic Guidance</p>
+        <div class="status-indicator">
+          <span class="status-dot"></span>
+          <span>Online & Ready</span>
+        </div>
+      </div>
+    </div>
+    
+    <div id="chat-window" class="chat-window">
+      <div class="welcome-message">
+        <div class="welcome-icon">🏥</div>
+        <h2>Welcome to Your Healthcare Companion</h2>
+        <p>Ask me anything about medicines, Ayurvedic remedies, health tips, and more.</p>
+      </div>
+    </div>
+    
+    <form id="chat-form" class="chat-form" action="javascript:;">
+      <div class="input-wrapper">
+        <input 
+          id="message-input" 
+          type="text" 
+          placeholder="Ask about medicines or Ayurvedic remedies..." 
+          autocomplete="off" 
+        />
+      </div>
+      <button type="submit" class="send-btn">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z"/>
+        </svg>
+      </button>
+    </form>
+  </div>
+  <script src="{{ url_for('static', filename='app.js') }}"></script>
+</body>
+</html>

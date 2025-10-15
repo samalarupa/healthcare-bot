@@ -15,7 +15,7 @@ This project demonstrates how to create and deploy a machine-learning-powered ch
 ---
 
 ## 🗂️ Project Structure
-
+```
 healthcare-bot/
 ├─ app.py
 ├─ requirements.txt
@@ -27,4 +27,4 @@ healthcare-bot/
 └─ static/
 ├─ style.css
 └─ app.js
-
+```
